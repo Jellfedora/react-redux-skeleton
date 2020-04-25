@@ -1,0 +1,80 @@
+.example {
+    &__component {
+        background: url('../../ressources/images/app-background.jpg');
+        height: 100vh;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+
+        &__title {
+            width: 100%;
+            background-color: $color-dark;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+            & h1 {
+                font-size: 1.5em;
+                margin-right: 1em;
+                color: $color-blue;
+            }
+
+            & span {
+                color: $color-purple;
+                line-height: 1.5em;
+            }
+        }
+
+        &__change-state {
+            width: 100%;
+            background-color: $color-dark;
+            min-height: 3em;
+            padding: 1em;
+
+            & span {
+                color: $color-purple;
+                cursor: pointer;
+                padding-top: 1em;
+            }
+
+            &__content {
+
+                cursor: pointer;
+
+                & button {
+                    cursor: pointer;
+                    color: $color-purple;
+                    padding: 0.5em;
+                    border: 2px solid $color-purple;
+                    border-radius: 50px;
+                    background-color: $color-blue;
+                    margin: 0 1em;
+                    transition: 0.3s;
+
+                    & img {
+                        width: 1em;
+                    }
+
+                    & span {
+                        margin-left: 1em;
+                    }
+                }
+
+                & button:hover {
+                    padding: 0.5em 2em;
+
+                }
+
+                & button:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
